@@ -17,12 +17,13 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px; /* Reducido de 100px */
     padding: 0 20px;
 }
 
 #logo img {
     display: block;
+    max-width: 120px; /* Reducción del tamaño del logo */
 }
 
 /* Menú */
@@ -34,12 +35,12 @@
 }
 
 #menu ul li {
-    margin: 0 10px;
+    margin: 0 8px; /* Reducción del margen */
 }
 
 #menu ul li a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px; /* Reducción del tamaño de fuente */
     color: #ffffff;
     transition: color 0.3s ease;
 }
@@ -50,14 +51,14 @@
 
 /* 🔹 Ajuste para el banner */
 .slider img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacios no deseados */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Botones */
 .icon img {
-    max-width: 100%;
+    max-width: 80px; /* Reducción del tamaño de los íconos */
     height: auto;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -69,6 +70,7 @@
 
 .icon a {
     text-decoration: none;
+    font-size: 14px; /* Reducción del tamaño del texto */
     color: #024c7e;
     transition: color 0.3s ease;
 }
@@ -82,28 +84,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px; /* Reducción del espacio entre los botones */
 }
 
 .icon {
-    flex: 1 1 calc(16.6% - 20px);
-    max-width: calc(16.6% - 20px);
+    flex: 1 1 calc(20% - 10px); /* Ajuste del tamaño */
+    max-width: calc(20% - 10px);
     text-align: center;
+    padding: 5px; /* Reducción del padding */
 }
 
 /* Estilo del botón flotante de WhatsApp */
 #whatsapp-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px; /* Ajuste de posición */
+    right: 15px;
     z-index: 1000;
-    width: 60px;
-    height: 60px;
+    width: 50px; /* Reducción del tamaño del botón */
+    height: 50px;
     background-color: #25D366;
     border-radius: 50%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -122,9 +125,9 @@ body {
 
 /* Botones personalizados */
 .custom-button {
-    font-size: 12px;
-    padding: 10px 20px;
-    margin: 5px;
+    font-size: 10px; /* Reducción del tamaño de fuente */
+    padding: 5px 10px; /* Reducción del padding */
+    margin: 3px;
     text-decoration: none;
     border: 2px solid white;
     border-radius: 5px;
@@ -148,18 +151,18 @@ ul.custom-list {
 
 ul.custom-list li {
     display: inline-block;
-    margin: 5px;
+    margin: 3px;
 }
 
 /* 🔹 Responsividad */
 @media (max-width: 768px) {
     .icon {
-        flex: 1 1 calc(33.33% - 20px);
+        flex: 1 1 calc(25% - 10px); /* Ajuste del tamaño en pantallas medianas */
     }
 }
 
 @media (max-width: 480px) {
     .icon {
-        flex: 1 1 calc(50% - 20px);
+        flex: 1 1 calc(50% - 10px); /* Ajuste del tamaño en pantallas pequeñas */
     }
 }
