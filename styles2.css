@@ -50,6 +50,10 @@
 }
 
 /* Banner */
+.slider {
+    margin-bottom: 10px; /* 1 cm = 10px en promedio */
+}
+
 .slider img {
     width: 100%;
     height: auto;
@@ -61,12 +65,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
+    padding: 10px;
 }
 
 .icon {
-    flex: 1 1 calc(20% - 10px);
-    max-width: calc(20% - 10px);
+    flex: 1 1 calc(20% - 20px); /* 5 íconos por fila */
+    max-width: calc(20% - 20px);
     text-align: center;
     padding: 5px;
 }
@@ -87,8 +92,24 @@
     font-size: 14px;
     color: #024c7e;
     transition: color 0.3s ease;
+    display: block;
+    margin-top: 5px;
 }
 
 .icon a:hover {
     color: red;
+}
+
+@media (max-width: 768px) {
+    .icon {
+        flex: 1 1 calc(33.33% - 20px); /* 3 íconos por fila en pantallas pequeñas */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        flex: 1 1 calc(50% - 20px); /* 2 íconos por fila en pantallas muy pequeñas */
+        max-width: calc(50% - 20px);
+    }
 }
