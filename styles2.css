@@ -8,14 +8,14 @@
 }
 
 .icon {
-    flex: 1 1 calc(14.28% - 15px); /* 7 íconos por fila */
-    max-width: calc(14.28% - 15px);
+    flex: 1 1 calc(12.5% - 15px); /* 8 íconos por fila */
+    max-width: calc(12.5% - 15px);
     text-align: center;
     padding: 5px;
 }
 
 .icon img {
-    max-width: 80px; /* Aumento del 15% respecto a los 70px anteriores */
+    max-width: 92px; /* Aumento del 15% sobre los 80px anteriores */
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -26,7 +26,7 @@
 
 .icon a {
     text-decoration: none;
-    font-size: 14px; /* Aumento del tamaño del texto */
+    font-size: 16px; /* Aumento del tamaño del texto */
     color: #024c7e;
     transition: color 0.3s ease;
     display: block;
@@ -40,7 +40,7 @@
 /* 🔹 Responsividad */
 @media (max-width: 1024px) {
     .icon {
-        flex: 1 1 calc(20% - 15px); /* 5 íconos por fila */
+        flex: 1 1 calc(16.66% - 15px); /* 6 íconos por fila */
     }
 }
 
