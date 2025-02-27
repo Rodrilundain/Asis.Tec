@@ -39,7 +39,7 @@
 
 #menu ul li a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px; /* Reducido de 25px a 22px */
     color: #ffffff;
     transition: color 0.3s ease;
 }
@@ -50,27 +50,30 @@
 
 /* 🔹 Ajuste para el banner */
 .slider img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacios no deseados */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Botones */
 .icon img {
-    max-width: 100%;
+    max-width: 70px; /* Reducido de 100% a 70px */
     height: auto;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .icon img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border-color: red;
 }
 
 .icon a {
     text-decoration: none;
+    font-size: 12px; /* Reducido de 14px a 12px */
     color: #024c7e;
     transition: color 0.3s ease;
+    display: block;
+    margin-top: 5px;
 }
 
 .icon a:hover {
@@ -82,35 +85,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px; /* Reducido de 20px a 10px */
+    padding: 10px;
 }
 
 .icon {
-    flex: 1 1 calc(16.6% - 20px);
-    max-width: calc(16.6% - 20px);
+    flex: 1 1 calc(20% - 10px); /* Reducido de 16.6% */
+    max-width: calc(20% - 10px);
     text-align: center;
 }
 
 /* Estilo del botón flotante de WhatsApp */
 #whatsapp-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px; /* Reducido de 20px */
+    right: 15px; /* Reducido de 20px */
     z-index: 1000;
-    width: 60px;
-    height: 60px;
+    width: 50px; /* Reducido de 60px a 50px */
+    height: 50px; /* Reducido de 60px a 50px */
     background-color: #25D366;
     border-radius: 50%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    line-height: 60px;
+    line-height: 50px; /* Ajustado para el nuevo tamaño */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .whatsapp-button img {
@@ -122,9 +120,9 @@ body {
 
 /* Botones personalizados */
 .custom-button {
-    font-size: 12px;
-    padding: 10px 20px;
-    margin: 5px;
+    font-size: 10px; /* Reducido de 12px a 10px */
+    padding: 5px 15px; /* Reducido de 10px 20px */
+    margin: 3px; /* Reducido de 5px */
     text-decoration: none;
     border: 2px solid white;
     border-radius: 5px;
@@ -148,18 +146,18 @@ ul.custom-list {
 
 ul.custom-list li {
     display: inline-block;
-    margin: 5px;
+    margin: 3px; /* Reducido de 5px */
 }
 
 /* 🔹 Responsividad */
 @media (max-width: 768px) {
     .icon {
-        flex: 1 1 calc(33.33% - 20px);
+        flex: 1 1 calc(33.33% - 10px); /* 3 íconos por fila */
     }
 }
 
 @media (max-width: 480px) {
     .icon {
-        flex: 1 1 calc(50% - 20px);
+        flex: 1 1 calc(50% - 10px); /* 2 íconos por fila */
     }
 }
