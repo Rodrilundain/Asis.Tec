@@ -88,8 +88,8 @@
 }
 
 .icon {
-    flex: 1 1 calc(30% - 20px); /* Ajuste del tamaño */
-    max-width: calc(30% - 20px);
+    flex: 1 1 calc(20% - 10px); /* Ajuste del tamaño */
+    max-width: calc(20% - 10px);
     text-align: center;
     padding: 10px; /* Reducción del padding */
 }
