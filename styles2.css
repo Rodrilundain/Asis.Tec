@@ -84,14 +84,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Reducción del espacio entre los botones */
+    gap: 40px; /* Reducción del espacio entre los botones */
 }
 
 .icon {
-    flex: 1 1 calc(20% - 10px); /* Ajuste del tamaño */
-    max-width: calc(20% - 10px);
+    flex: 1 1 calc(30% - 20px); /* Ajuste del tamaño */
+    max-width: calc(30% - 20px);
     text-align: center;
-    padding: 5px; /* Reducción del padding */
+    padding: 10px; /* Reducción del padding */
 }
 
 /* Estilo del botón flotante de WhatsApp */
