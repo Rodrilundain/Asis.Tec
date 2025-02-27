@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Reduce el espacio entre los íconos */
+    gap: 15px; /* Espaciado entre íconos */
     padding: 10px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .icon img {
-    max-width: 70px; /* Se reduce el tamaño de los íconos */
+    max-width: 80px; /* Aumento del 15% respecto a los 70px anteriores */
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -26,7 +26,7 @@
 
 .icon a {
     text-decoration: none;
-    font-size: 12px; /* Se reduce el tamaño del texto debajo de los íconos */
+    font-size: 14px; /* Aumento del tamaño del texto */
     color: #024c7e;
     transition: color 0.3s ease;
     display: block;
